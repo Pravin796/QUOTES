@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&family=Poppins:ital,wght@0,200;1,200;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Neonderthaw", cursive;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  text-align: center;
+  height: 100vh;
+  background: url(cherry.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 200px;
+  max-width: 700px;
+  color: black;
+}
+div {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.container {
+  width: 100%;
+  min-height: 200px;
+  max-width: 650px;
+  max-height: 400px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  /* glass effect */
+  background: rgba(255, 255, 255, 0.324);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(255, 255, 255, 0.27);
+}
+@media screen and (max-width: 1028px) {
+  .container {
+    width: 70%;
+  }
+  h1 {
+    font-size: 6vw !important;
+  }
+  blockquote {
+    font-size: 3vw !important;
+  }
+  #author {
+    font-weight: 600;
+    font-size: 2vw;
+    bottom: 17vh;
+    transform: translateX(100%);
+  }
+}
+h1 {
+  font-weight: bolder;
+  font-size: 35px;
+  position: relative;
+  bottom: 11%;
+}
+.container h1::after {
+  content: "";
+  width: 120%;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(240 35 35);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+blockquote {
+  font-size: 25px;
+  font-weight: 900;
+  position: relative;
+  /* bottom: 35px; */
+  /* top: 20px; */
+  min-height: 100px;
+  max-width: 550px;
+}
+/* #loding::before{
+  content: "''\a";
+} */
+blockquote::before,
+blockquote::after {
+  content: '"';
+}
+span {
+  font-weight: 600;
+  font-size: 17px;
+  position: absolute;
+  bottom: 13vh;
+  transform: translateX(120%);
+}
+span::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: rgb(240 35 35);
+  position: absolute;
+  bottom: 43%;
+  transform: translateX(-113%);
+}
+.cont-btn {
+  position: relative;
+  width: 100%;
+  top: 60px;
+}
+#new-Quotes,
+#post {
+  padding: 7px 30px 7px 30px;
+  border-radius: 25px;
+  border: none;
+  color: chocolate;
+  font-weight: 800;
+  font-size: larger;
+  margin-left: 30px;
+  cursor: pointer;
+}
+#new-Quotes:hover, #post:hover{
+  background-color: #d8d7d7;
+  color: red;
+  transition: all .3s ease-out;
+}

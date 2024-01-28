@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qoutes</title>
+    <link rel="stylesheet" href="qoutes.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">Quote of the day</h1>
+      <blockquote id="loading">Loading...</blockquote>
+      <br/>
+      <span id="author">Loading...</span>
+      <div class="cont-btn">
+        <button id="new-Quotes" onclick="apifetch(apiurl);">Next</button>
+        <button onclick="tweet()"id="post">Post</button>
+      </div>
+    </div>
+  </body>
+  <script src="qoutes.js"></script>
+</html>
